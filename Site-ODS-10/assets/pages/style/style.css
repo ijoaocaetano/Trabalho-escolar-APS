@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-image: url("ods10.png");
+    background-position: right top;
+    background-repeat: no-repeat;*/
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    background-color: #7B1730;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: #F277B0;
+}
+
+
+.ods-section {
+    background-color: #DB1567;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ods-content h1 {
+    font-size: 130px;
+    margin-bottom: 20px;
+}
+
+.ods-content {
+    min-height: 100vh;
+    padding-top: 300px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.ods-content button {
+    background-color: #DB1567;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ods-content button:hover {
+    background-color: #ff80b3;
+}
+
+.ods-image img {
+    min-height: 100vh;
+    width: 100vh;
+    height: auto;
+    padding-top: 300px;
+}
+
+/*.container {
+    background-color: #FF66C4;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*TESTE*/
+
+.container {
+    width: 100%;
+    text-align: center;
+    background-color: #e4007f;
+    padding: 50px;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.objetivos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.objetivo {
+    flex: 1;
+    padding: 20px;
+    background-color: #e4007f;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*Responsividade para telas menores*/
+
+@media (max-width: 768px) {
+    .objetivos {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

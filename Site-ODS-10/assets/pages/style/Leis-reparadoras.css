@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #9B1B30; /* Cor da ODS 10 */
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #7B1730; /* Tom mais escuro para contraste */
+    text-align: left;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #FFC1D1; /* Tom mais claro para hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ods-section {
+    background-color: #DB1567; /* Cor similar à ODS 10 */
+    padding: 50px;
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.ods-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.ods-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #F2E2E5; /* Cor de texto suave */
+}
+
+.ods-content ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.ods-content ul li {
+    margin-bottom: 15px;
+}
+
+.ods-content ul li a {
+    color: #FFC1D1;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.ods-content ul li a:hover {
+    color: #F9ACBB;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 100px;
+    }
+
+    .ods-section {
+        padding: 20px;
+    }
+
+    .ods-content h1 {
+        font-size: 32px;
+    }
+
+    .ods-content p, 
+    .ods-content ul li a {
+        font-size: 14px;
+    }
+}
